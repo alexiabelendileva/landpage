@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.responsive-menu {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #201f1f;
+}
+
+.menu-content {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: #fff; 
+  padding: 10px;
+  width: 200px; 
+  transition: opacity 0.3s ease-in-out; /*transición de abrir y cerrar el menu*/
+  opacity: 0; /* menu no se ve */
+  background-color: #201f1f;
+}
+.menu-content.show {
+  opacity: 1; /* muestra el menu cuando la clase 'show' está aplicada */
+}
+a{
+    color: #ccc;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.logo img{
+    
+    margin: .5em;
+    width: 4em;
+}
+.logo{
+    text-align: left;
+}
+.nav-item{
+    margin:.5em 0;
+    padding: .5em 0;
+}
+.nav-item:hover{
+background-color: #cccccc3f;
+transition: .3s ease;
+}
+
+@media screen and (min-width: 700px) {
+    .responsive-menu {
+      display: none; /* Hide normal nav on small screens */
+    }
+  
+  }
