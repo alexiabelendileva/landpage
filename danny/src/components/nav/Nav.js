@@ -15,7 +15,7 @@ function Nav() {
             <a className="underline item-links" href="/about">Sobre mí</a>
           </li>
           <li>
-            <a className="underline item-links" href="/services">Servicios</a>
+            <a className="underline item-links" href="#servicios">Servicios</a>
           </li>
           <li>
             <a className="underline item-links" href="/services">Contacto</a>

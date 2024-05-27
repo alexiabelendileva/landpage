@@ -10,7 +10,7 @@ function HamburgerMenu() {
   return (
     <div className="responsive-menu">
       <div className="logo">
-        <img src={logo} />
+        <img src={logo} alt="ClubKninodelOeste" />
       </div>
       <Hamburger
         className="hamburger"
@@ -26,12 +26,12 @@ function HamburgerMenu() {
           <a href="#id">
             <li className="nav-item">Sobre mí</li>
           </a>
-          <Link to="#id">
+          <a href="#servicios">
             <li className="nav-item">Servicios</li>
-          </Link>
-          <Link to="#id">
+          </a>
+          <a href="#id">
             <li className="nav-item">Contacto</li>
-          </Link>
+          </a>
         </ul>
       </div>
     </div>

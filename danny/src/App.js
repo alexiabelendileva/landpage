@@ -1,8 +1,8 @@
 import './App.css';
-import {React, Route, Routes } from 'react-router-dom';
+import {React } from 'react-router-dom';
 import Body from './components/body/Body.js';
 import Nav from './components/nav/Nav.js';
-import Footer from './components/footer/Footer.js';
+import Footer from './components/carrusel/Carrusel.js';
 
 
 function App() {

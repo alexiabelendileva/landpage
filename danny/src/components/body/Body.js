@@ -1,10 +1,26 @@
-import './Body.css'
 
+import React from 'react';
 
-function Body(){
-    return(
-        <h1>THIS IS A STYLED NAV</h1>
-    )
+import Carrusel from "../carrusel/Carrusel";
+import Presentacion from "../presentacion/Presentacion";
+import Servicios from "../servicios/Servicios";
+import SobreMi from "../sobreMi/Sobremi";
+import Trabajo from "../trabajo/Trabajo";
+import "./Body.css";
+
+function Body() {
+  return (
+    <div>
+      <Presentacion />
+      <Carrusel />
+      <SobreMi />
+      <Trabajo/>
+      <Servicios />
+      {/* testimonios */}
+      {/* FAQS */}
+      {/* footer */}
+    </div>
+  );
 }
 
 export default Body;

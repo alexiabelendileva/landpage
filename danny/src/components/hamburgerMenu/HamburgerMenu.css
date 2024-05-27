@@ -1,57 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 .responsive-menu {
-  position: sticky;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   background-color: #201f1f;
+  z-index: 50;
+  width: 100%;
 }
 
 .menu-content {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: #fff; 
+  background-color: #fff;
   padding: 10px;
-  width: 200px; 
-  transition: opacity 0.3s ease-in-out; /*transición de abrir y cerrar el menu*/
+  width: 200px;
+  transition: opacity 0.5s ease-in-out; /*transición de abrir y cerrar el menu*/
   opacity: 0; /* menu no se ve */
   background-color: #201f1f;
+  z-index: 0;
+  display: none;
 }
 .menu-content.show {
+  transition: opacity 0.5s ease-in-out; /*transición de abrir y cerrar el menu*/
+  display: block;
   opacity: 1; /* muestra el menu cuando la clase 'show' está aplicada */
+  z-index: 50;
+  width: 100%;
+  left: 0;
+  text-align: center;
 }
-a{
-    color: #ccc;
-    text-decoration: none;
+a {
+  color: #ccc;
+  text-decoration: none;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
-.logo img{
-    
-    margin: .5em;
-    width: 4em;
+.logo img {
+  margin: 0.5em;
+  width: 4em;
 }
-.logo{
-    text-align: left;
+.logo {
+  text-align: left;
 }
-.nav-item{
-    margin:.5em 0;
-    padding: .5em 0;
+.nav-item {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
 }
-.nav-item:hover{
-background-color: #cccccc3f;
-transition: .3s ease;
+.nav-item:hover {
+  background-color: #cccccc3f;
+  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 700px) {
-    .responsive-menu {
-      display: none; /* Hide normal nav on small screens */
-    }
-  
+  .responsive-menu {
+    display: none; /* se oculta nav normal en dispositivos pequeños */
   }
+}

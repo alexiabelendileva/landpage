@@ -1,0 +1,83 @@
+.servicios h2,
+.servicios p {
+  text-align: center;
+  padding: 10px;
+}
+
+.card2 {
+  width: 45vw;
+  height: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.card-content {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Slider 3D */
+.slider-container {
+  margin-top: 150px;
+  perspective: 2500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  width: 45%;
+  position: relative;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.nav-buttons {
+  display: flex;
+  margin-top: 50px;
+}
+.nav-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .slider-container {
+    margin-top: 20px;
+    padding-top: 50px;
+    perspective: 2500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .card-container {
+    position: relative;
+    /* width: 50%; */
+    max-width: 300px;
+    height: 45vw;
+    max-height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .nav-buttons {
+    display: flex;
+    padding-top: 150px;
+  }
+}

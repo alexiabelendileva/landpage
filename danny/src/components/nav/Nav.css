@@ -8,7 +8,8 @@
 @media screen and (min-width: 700px) {
   .normal-nav {
     display: block;
-    background-color: #201f1f;
+    background-color: #201f1f;    scroll-behavior: smooth;
+
   }
   .nav-links {
     display: flex;
